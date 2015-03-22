@@ -73,7 +73,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="100dp"
+            android:layout_height="55dp"
             android:paddingTop="10dp" >
 
             <TextView
@@ -87,7 +87,7 @@
             <ExpandableListView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/expandableListView" />
+                android:id="@+id/expandableListView1" />
 
         </LinearLayout>
 
@@ -111,6 +111,27 @@
                 android:id="@+id/editText3"
                 android:layout_column="19"
                 android:value="test" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="fill_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Age group"
+                android:id="@+id/textView5"
+                android:layout_column="1" />
+
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar" />
+
         </LinearLayout>
 
     </LinearLayout>
