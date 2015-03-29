@@ -38,7 +38,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="fill_parent"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,27 +69,6 @@
                 android:id="@+id/editText"
                 android:layout_column="19"
                 android:value="test" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="55dp"
-            android:paddingTop="10dp" >
-
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="fill_parent"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Subject"
-                android:id="@+id/textView3"
-                android:layout_column="1" />
-
-            <ExpandableListView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/expandableListView1" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -130,8 +110,28 @@
             <SeekBar
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/seekBar" />
+                android:id="@+id/seekBar"
+                android:max="20"
+                android:progress="5"
+                android:indeterminate="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/button"
+                android:onClick="saveData"/>
         </LinearLayout>
 
     </LinearLayout>

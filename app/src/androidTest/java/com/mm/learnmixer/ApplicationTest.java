@@ -1,4 +1,4 @@
-package com.mm.learnmixer3;
+package com.mm.learnmixer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
